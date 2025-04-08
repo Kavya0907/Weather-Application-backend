@@ -12,6 +12,7 @@ This is a full-stack weather application built using **React.js** for the fronte
 - Fetch related YouTube videos for the searched location.
 
 **Prerequisites**
+
 Ensure the following tools are installed on your system:
 - Java 17+: Required for Spring Boot.
 - Maven: To build the backend.
@@ -22,9 +23,12 @@ Ensure the following tools are installed on your system:
   - [YouTube Data API] (https://console.cloud.google.com/)
 
 **Setup Instructions**
+
 *1. Backend Setup*
+
     1. Navigate to the backend directory:
    	         cd weatherApllication/backend
+             
     2. Configure the application:
           - Open `src/main/resources/application.properties`.
   	      - Replace placeholders with your database credentials and API keys:
@@ -35,11 +39,14 @@ Ensure the following tools are installed on your system:
               spring.datasource.password=your_password
               openweathermap.api.key=your_openweathermap_api_key
               youtube.api.key=your_youtube_api_key
+              
  	  3. Start MySQL:
         -  Run MySQL server using:
     	      	mysql.server start
+            
     4. Build and run the backend:
          mvn spring-boot:run
+         
     5. Backend will run on `http://localhost:8080`.
        CRUD: 
          •	Create: POST /api/weather saves location and weather data to MySQL.
