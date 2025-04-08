@@ -1,5 +1,6 @@
 
 **Weather Application**
+
 This is a full-stack weather application built using **React.js** for the frontend and **Spring Boot** for the backend. It integrates with the OpenWeatherMap API to fetch weather data and the YouTube API to display related videos.
 
 **Features**
@@ -27,6 +28,7 @@ Ensure the following tools are installed on your system:
     2. Configure the application:
           - Open `src/main/resources/application.properties`.
   	      - Replace placeholders with your database credentials and API keys:
+         
             properties
               spring.datasource.url=jdbc:mysql://localhost:3306/schema_name
               spring.datasource.username=root
