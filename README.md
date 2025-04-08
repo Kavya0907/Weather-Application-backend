@@ -24,7 +24,7 @@ Ensure the following tools are installed on your system:
 
 **Setup Instructions**
 
-*1. Backend Setup*
+**Backend Setup**
 
     1. Navigate to the backend directory:
    	         cd weatherApllication/backend
@@ -40,14 +40,14 @@ Ensure the following tools are installed on your system:
               openweathermap.api.key=your_openweathermap_api_key
               youtube.api.key=your_youtube_api_key
               
- 	  3. Start MySQL:
+ 	   3. Start MySQL:
         -  Run MySQL server using:
     	      	mysql.server start
             
-    4. Build and run the backend:
+     4. Build and run the backend:
          mvn spring-boot:run
          
-    5. Backend will run on `http://localhost:8080`.
+     5. Backend will run on `http://localhost:8080`.
        CRUD: 
          •	Create: POST /api/weather saves location and weather data to MySQL.
          •	Read: GET /api/weather fetches all records.
@@ -59,13 +59,17 @@ Ensure the following tools are installed on your system:
        Export: 
          •	GET /api/weather/export generates a CSV file.
        
-*2. Frontend Setup*
+**Frontend Setup**
+
     1. Navigate to the frontend directory:
           cd weatherApplication/frontend
+          
     2. Install dependencies:
           npm install axios
+          
     3. Start the frontend:
           npm start 
+          
     4.Frontend will run on `http://localhost:3000`.
 
 **How to Obtain API Keys**
