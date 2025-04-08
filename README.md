@@ -40,24 +40,24 @@ Ensure the following tools are installed on your system:
               openweathermap.api.key=your_openweathermap_api_key
               youtube.api.key=your_youtube_api_key
               
- 	   3. Start MySQL:
+ 	  3. Start MySQL:
         -  Run MySQL server using:
     	      	mysql.server start
             
-     4. Build and run the backend:
+    4. Build and run the backend:
          mvn spring-boot:run
          
-     5. Backend will run on `http://localhost:8080`.
-       CRUD: 
-         •	Create: POST /api/weather saves location and weather data to MySQL.
-         •	Read: GET /api/weather fetches all records.
-         •	Update: PUT /api/weather/{id} updates a record.
-         •	Delete: DELETE /api/weather/{id} removes a record.
-       API Integration: 
-         •	OpenWeatherMap: Current weather (/current) and 5-day forecast (/forecast).
-         •	YouTube: Video URL (/video).
-       Export: 
-         •	GET /api/weather/export generates a CSV file.
+    5. Backend will run on `http://localhost:8080`.
+         CRUD: 
+           •	Create: POST /api/weather saves location and weather data to MySQL.
+           •	Read: GET /api/weather fetches all records.
+           •	Update: PUT /api/weather/{id} updates a record.
+           •	Delete: DELETE /api/weather/{id} removes a record.
+         API Integration: 
+           •	OpenWeatherMap: Current weather (/current) and 5-day forecast (/forecast).
+           •	YouTube: Video URL (/video).
+         Export: 
+           •	GET /api/weather/export generates a CSV file.
        
 **Frontend Setup**
 
@@ -70,7 +70,7 @@ Ensure the following tools are installed on your system:
     3. Start the frontend:
           npm start 
           
-    4.Frontend will run on `http://localhost:3000`.
+    4. Frontend will run on `http://localhost:3000`.
 
 **How to Obtain API Keys**
 
