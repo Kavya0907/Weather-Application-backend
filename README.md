@@ -32,7 +32,6 @@ Ensure the following tools are installed on your system:
     2. Configure the application:
           - Open `src/main/resources/application.properties`.
   	      - Replace placeholders with your database credentials and API keys:
-         
             properties
               spring.datasource.url=jdbc:mysql://localhost:3306/schema_name
               spring.datasource.username=root
@@ -99,7 +98,7 @@ Ensure the following tools are installed on your system:
      - Enter an invalid location (e.g., "xyz") to see error messages.
 
 **Execution Flow**
-  1. Backend connects to MySQL and creates the `weather_requests` table automatically.
+  1. Backend connects to MySQL server.
   2. Frontend interacts with users via UI components.
   3. Backend fetches data from OpenWeatherMap/YouTube APIs or interacts with MySQL for CRUD operations.
   4. Data is displayed on the frontend, including current weather, forecasts, and error messages.
